@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Growzen Financial Services | Premium Multi-Tab Portal</title>
-    <!-- Tailwind CSS Engine -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter & Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script>
@@ -34,15 +31,11 @@
 </head>
 <body class="bg-slate-50 text-brandNavy font-sans antialiased flex flex-col min-h-screen">
 
-    <!-- NAVIGATION BAR WITH DYNAMIC TAB TRIGGERS -->
+    <!-- NAVIGATION BAR -->
     <header class="bg-white border-b border-slate-200/80 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo area -->
             <button onclick="switchTab('home')" class="flex items-center gap-2 group text-left">
-                <!-- If your image logo is uploaded, use this line below: -->
-                <img src="logo.png" alt="Growzen Logo" class="h-20 w-auto fail-fallback" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='flex'">
-                
-                <!-- Fallback premium text logo if image fails to load -->
+                <img src="logo.png" alt="Growzen Logo" class="h-10 w-auto fail-fallback" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='flex'">
                 <div id="text-logo" class="hidden items-center gap-2">
                     <div class="w-10 h-10 bg-gradient-to-tr from-brandNavy to-brandEmerald rounded-xl flex items-center justify-center text-white font-bold text-xl">G</div>
                     <div class="flex flex-col">
@@ -51,11 +44,10 @@
                 </div>
             </button>
             
-            <!-- Tab Controls (Desktop Navigation Links) -->
             <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
                 <button onclick="switchTab('home')" id="nav-home" class="nav-btn text-brandEmerald font-semibold transition-colors">Home</button>
                 <button onclick="switchTab('about')" id="nav-about" class="nav-btn hover:text-brandNavy transition-colors">About Us</button>
-                <button onclick="switchTab('services')" id="nav-services" class="nav-btn hover:text-brandNavy transition-colors">Services</button>
+                <button onclick="switchTab('services')" id="nav-services" class="nav-btn hover:text-brandNavy transition-colors">Services Hub</button>
                 <button onclick="switchTab('process')" id="nav-process" class="nav-btn hover:text-brandNavy transition-colors">Our Process</button>
             </nav>
 
@@ -67,17 +59,16 @@
         </div>
     </header>
 
-    <!-- MAIN VIEWPORT PANELS CONTAINER -->
+    <!-- MAIN PANELS CONTROLLER -->
     <main class="flex-grow">
         
         <!-- HOME TAB PANEL -->
         <div id="panel-home" class="tab-panel block animate-fade-in">
-            <!-- Hero Grid Layout -->
             <section class="relative pt-12 pb-20 md:py-32 bg-gradient-to-b from-white to-slate-50">
                 <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
                     <div class="md:col-span-7 text-center md:text-left">
                         <span class="inline-flex items-center gap-2 bg-emerald-50 text-brandEmerald text-xs font-bold px-3 py-1.5 rounded-full uppercase mb-6 border border-emerald-200/50">
-                            <span class="w-1.5 h-1.5 rounded-full bg-brandEmerald animate-pulse"></span> Dynamic Growth Engine Active
+                            <span class="w-1.5 h-1.5 rounded-full bg-brandEmerald animate-pulse"></span> Corporate Financial Advisory Active
                         </span>
                         <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-brandNavy tracking-tight leading-[1.1] mb-6">
                             Grow Smarter. <br>Plan Better. <br>
@@ -95,7 +86,6 @@
                             </button>
                         </div>
                     </div>
-                    <!-- Analytics Graphics Visual Mockup -->
                     <div class="md:col-span-5 hidden md:block">
                         <div class="bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 space-y-4">
                             <div class="h-12 bg-slate-50 rounded-xl flex items-center justify-between px-4 border border-slate-100">
@@ -117,7 +107,7 @@
             <section class="py-20 max-w-5xl mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-brandNavy mb-4">About Growzen</h2>
-                    <p class="text-slate-600 max-w-2xl mx-auto">Your modern one-stop destination for absolute financial clarity and corporate compliance management.</p>
+                    <p class="text-slate-600 max-w-2xl mx-auto">Your modern destination for absolute financial clarity and corporate compliance management.</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div class="space-y-6">
@@ -130,43 +120,121 @@
                             <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100"><i class="fa-solid fa-check text-brandEmerald mr-2"></i> Transparency</div>
                         </div>
                     </div>
-                    <div class="bg-gradient-to-tr from-brandNavy to-brandNavyLight text-white p-8 rounded-2xl shadow-xl">
-                        <h4 class="text-brandGold font-bold mb-2">Our Promise</h4>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4">Every file managed inside the Growzen ledger platform goes through multi-tier verification channels to keep audit risk metrics near absolute zero.</p>
-                        <div class="text-2xl font-bold text-brandEmerald">98% Client Satisfaction</div>
-                    </div>
                 </div>
             </section>
         </div>
 
-        <!-- SERVICES TAB PANEL -->
+        <!-- NEW ADVANCED INTERACTIVE SERVICES HUB PANEL -->
         <div id="panel-services" class="tab-panel hidden animate-fade-in">
-            <section class="py-20 bg-slate-50">
+            <section class="py-16 bg-slate-50">
                 <div class="max-w-7xl mx-auto px-6">
-                    <div class="text-center max-w-3xl mx-auto mb-16">
-                        <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-brandNavy mb-4">Core Financial Services Tabs</h2>
-                        <p class="text-slate-600">Select any service branch to streamline structural company lifecycles.</p>
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-brandNavy mb-4">Services Solution Suite</h2>
+                        <p class="text-slate-600">Select an operational segment below to explore our targeted financial capabilities.</p>
                     </div>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Card 1 -->
-                        <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition-all">
-                            <div class="w-12 h-12 bg-emerald-50 text-brandEmerald rounded-xl flex items-center justify-center text-xl font-bold mb-6"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-                            <h3 class="font-heading font-bold text-xl text-brandNavy mb-3">Taxation & Filing</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Seamless Income Tax Return (ITR) processing and tax optimization architecture models.</p>
+
+                    <!-- Layout Matrix: Sidebar Tabs Controls left, Dynamic Content Display Grid right -->
+                    <div class="grid lg:grid-cols-12 gap-8 items-start">
+                        
+                        <!-- Sidebar Tab Swapping Navigation Links -->
+                        <div class="lg:col-span-3 bg-white p-3 rounded-2xl border border-slate-200/80 shadow-sm flex flex-row lg:flex-col overflow-x-auto gap-2 sticky top-24">
+                            <button onclick="switchSubService('sub-tax')" id="btn-sub-tax" class="sub-service-btn w-full text-left px-4 py-3 rounded-xl text-sm font-bold flex items-center gap-3 bg-brandNavy text-white transition-all">
+                                <i class="fa-solid fa-file-invoice-dollar w-5"></i> <span>Taxation & Filing</span>
+                            </button>
+                            <button onclick="switchSubService('sub-gst')" id="btn-sub-gst" class="sub-service-btn w-full text-left px-4 py-3 rounded-xl text-sm font-semibold flex items-center gap-3 text-slate-600 hover:bg-slate-50 transition-all whitespace-nowrap">
+                                <i class="fa-solid fa-building-columns w-5"></i> <span>GST Compliance</span>
+                            </button>
+                            <button onclick="switchSubService('sub-corp')" id="btn-sub-corp" class="sub-service-btn w-full text-left px-4 py-3 rounded-xl text-sm font-semibold flex items-center gap-3 text-slate-600 hover:bg-slate-50 transition-all whitespace-nowrap">
+                                <i class="fa-solid fa-chart-pie w-5"></i> <span>Corporate Setup</span>
+                            </button>
+                            <button onclick="switchSubService('sub-allied')" id="btn-sub-allied" class="sub-service-btn w-full text-left px-4 py-3 rounded-xl text-sm font-semibold flex items-center gap-3 text-slate-600 hover:bg-slate-50 transition-all whitespace-nowrap">
+                                <i class="fa-solid fa-piggy-bank w-5"></i> <span>Advisory & Wealth</span>
+                            </button>
                         </div>
-                        <!-- Card 2 -->
-                        <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition-all">
-                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6"><i class="fa-solid fa-building-columns"></i></div>
-                            <h3 class="font-heading font-bold text-xl text-brandNavy mb-3">GST Adjustments</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Corporate GST dynamic infrastructure setup, monthly reporting protocols, and credits balancing.</p>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition-all">
-                            <div class="w-12 h-12 bg-amber-50 text-brandGold rounded-xl flex items-center justify-center text-xl font-bold mb-6"><i class="fa-solid fa-chart-pie"></i></div>
-                            <h3 class="font-heading font-bold text-xl text-brandNavy mb-3">Corporate Incorporation</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Private Limited structures setup, fast-tracked MSME applications, and formal ROC updates.</p>
+
+                        <!-- Sub-Services Presentation Panels Column Area -->
+                        <div class="lg:col-span-9">
+                            
+                            <!-- SUB-TAB CONTENT PANEL: TAXATION -->
+                            <div id="subpanel-tax" class="sub-panel grid md:grid-cols-2 gap-6 animate-fade-in">
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-emerald-50 text-brandEmerald rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-user-shield"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">Income Tax Return Filing</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">End-to-end processing architecture maps for Salaried individuals, freelancers, and businesses owners.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-emerald-50 text-brandEmerald rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">Strategic Tax Planning</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Advanced structures designed to systematically maximize deductions and optimize liability indexes safely.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-emerald-50 text-brandEmerald rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-receipt"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">TDS Compliance Enforcements</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Quarterly processing cycles, validation audits, certificates consolidation, and transactional oversight tracking.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-emerald-50 text-brandEmerald rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-book"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">Accounting & Bookkeeping</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Secure digital ledger reconciliation setups tracking automated cash flow statements cleanly.</p>
+                                </div>
+                            </div>
+
+                            <!-- SUB-TAB CONTENT PANEL: GST COMPLIANCE -->
+                            <div id="subpanel-gst" class="sub-panel hidden grid md:grid-cols-2 gap-6 animate-fade-in">
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-id-card"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">GST Registration Setup</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Fast-tracked applications and validation paths structured for brand new corporate pipelines.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">Monthly Return Filing Lifecycle</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Automated compilation schedules processing clean GSTR-1 and GSTR-3B ledger returns parameters regularly.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">Input Tax Credit Verification</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Algorithmic reconciliation scans evaluating vendor statements matching leakage indicators instantly.</p>
+                                </div>
+                            </div>
+
+                            <!-- SUB-TAB CONTENT PANEL: CORPORATE SETUP -->
+                            <div id="subpanel-corp" class="sub-panel hidden grid md:grid-cols-2 gap-6 animate-fade-in">
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-amber-50 text-brandGold rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-sitemap"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">Company & LLP Incorporation</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Turnkey setup processing frameworks for Private Limited, One Person Company, and LLP variations.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-amber-50 text-brandGold rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-address-card"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">MSME Registration Node</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Access federal support protections and specialized credit lending corridors through fast processing setups.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-amber-50 text-brandGold rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-scale-balanced"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">ROC Compliance Upkeep</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Filing validation for corporate resolutions, annual returns paperwork summaries, and protocol safety trackers.</p>
+                                </div>
+                            </div>
+
+                            <!-- SUB-TAB CONTENT PANEL: ADVISORY & WEALTH -->
+                            <div id="subpanel-allied" class="sub-panel hidden grid md:grid-cols-2 gap-6 animate-fade-in">
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-chart-line"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">Investment & Mutual Funds</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Strategic allocations framework development targeting diversification growth blueprints cleanly.</p>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center font-bold mb-4"><i class="fa-solid fa-shield"></i></div>
+                                    <h4 class="font-heading font-bold text-lg text-brandNavy mb-2">Insurance & Risk Evaluation</h4>
+                                    <p class="text-slate-500 text-xs leading-relaxed">Corporate and family policy architecture audits defending long term viability models.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
             </section>
         </div>
@@ -175,55 +243,36 @@
         <div id="panel-process" class="tab-panel hidden animate-fade-in">
             <section class="py-20 max-w-6xl mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-brandNavy mb-4">Our Onboarding Engine Workflow</h2>
+                    <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-brandNavy mb-4">Our Process Engine Workflow</h2>
                     <p class="text-slate-600">Clean, fully tracked step pipelines designed to maintain deployment velocity.</p>
                 </div>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60">
                         <div class="w-10 h-10 bg-brandNavy text-white rounded-xl font-bold flex items-center justify-center mb-4">1</div>
                         <h4 class="font-bold font-heading mb-2">Book Slot</h4>
-                        <p class="text-slate-500 text-sm">Select an expert CA integration meeting block on our dashboard systems.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60">
-                        <div class="w-10 h-10 bg-brandNavy text-white rounded-xl font-bold flex items-center justify-center mb-4">2</div>
-                        <h4 class="font-bold font-heading mb-2">Secure Drop</h4>
-                        <p class="text-slate-500 text-sm">Upload all necessary corporate ledgers into our active encrypted folder vault.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60">
-                        <div class="w-10 h-10 bg-brandNavy text-white rounded-xl font-bold flex items-center justify-center mb-4">3</div>
-                        <h4 class="font-bold font-heading mb-2">System Audit</h4>
-                        <p class="text-slate-500 text-sm">Assigned accountants cross-verify data lines against global structural parameters.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60">
-                        <div class="w-10 h-10 bg-brandGold text-brandNavy rounded-xl font-bold flex items-center justify-center mb-4">4</div>
-                        <h4 class="font-bold font-heading mb-2">Filing Sent</h4>
-                        <p class="text-slate-500 text-sm">Receive confirmation codes, filed assets records, and strategy diagnostics data files.</p>
+                        <p class="text-slate-500 text-sm">Select an expert CA integration meeting block on our systems dashboards.</p>
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- CONTACT / CONSULTATION TAB PANEL -->
+        <!-- CONTACT TAB PANEL -->
         <div id="panel-contact" class="tab-panel hidden animate-fade-in">
             <section class="py-16 max-w-3xl mx-auto px-6">
                 <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
                     <div class="bg-brandNavy p-8 text-center text-white">
-                        <h3 class="font-heading font-extrabold text-2xl mb-2">Schedule An Active Consultation</h3>
+                        <h3 class="font-heading font-extrabold text-2xl mb-2">Schedule An Active Strategy Slot</h3>
                         <p class="text-slate-400 text-sm">Secure and confidential pipeline framework operations.</p>
                     </div>
-                    <form class="p-8 space-y-6" onsubmit="event.preventDefault(); alert('Success! Form received.');">
+                    <form class="p-8 space-y-6" onsubmit="event.preventDefault(); alert('Form received.');">
                         <div class="grid sm:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Full Identity Name</label>
                                 <input type="text" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brandEmerald" placeholder="John Doe">
                             </div>
-                            <div>
-                                <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Contact Email</label>
-                                <input type="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-brandEmerald" placeholder="john@company.com">
-                            </div>
                         </div>
                         <button type="submit" class="w-full bg-brandEmerald hover:bg-emerald-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-brandEmerald/20 transition-all">
-                            Submit Consultation Strategy Request
+                            Submit Consultation Request
                         </button>
                     </form>
                 </div>
@@ -232,63 +281,75 @@
 
     </main>
 
-    <!-- TRUST STRIP BANNER -->
-    <div class="bg-brandNavy text-white py-4 overflow-hidden text-center text-xs border-y border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-6 text-slate-400">
-            <span><i class="fa-solid fa-shield-halved text-brandEmerald mr-1"></i> End-to-End Vault AES-256 Enforced</span>
-            <span><i class="fa-solid fa-user-check text-brandGold mr-1"></i> Certified CA Advisory Team</span>
-        </div>
-    </div>
-
-    <!-- FOOTER LINK SHEETS -->
-    <footer class="bg-brandNavy text-slate-500 py-8 text-center text-xs">
+    <!-- FOOTER STACKS -->
+    <footer class="bg-brandNavy text-slate-500 py-8 text-center text-xs mt-auto">
         <p>© 2026 Growzen Financial Services. Protected Asset Infrastructure System. Live on GitHub Engine.</p>
     </footer>
 
-    <!-- INTERACTIVE MULTI-TAB CONTROLLER SCRIPTS -->
+    <!-- INTERACTIVE TAB TRIGGER FUNCTIONS -->
     <script>
         function switchTab(tabId) {
-            // Hide all tab panels
             const panels = document.querySelectorAll('.tab-panel');
             panels.forEach(panel => {
                 panel.classList.add('hidden');
                 panel.classList.remove('block');
             });
 
-            // Show target panel
             const activePanel = document.getElementById('panel-' + tabId);
             if(activePanel) {
                 activePanel.classList.remove('hidden');
                 activePanel.classList.add('block');
             }
 
-            // Reset navigation links styling state
             const buttons = document.querySelectorAll('.nav-btn');
             buttons.forEach(btn => {
                 btn.classList.remove('text-brandEmerald', 'font-semibold');
                 btn.classList.add('text-slate-600', 'hover:text-brandNavy');
             });
 
-            // Set active navigation styling state
             const activeNav = document.getElementById('nav-' + tabId);
             if(activeNav) {
                 activeNav.classList.add('text-brandEmerald', 'font-semibold');
                 activeNav.classList.remove('text-slate-600', 'hover:text-brandNavy');
             }
-
-            // Automatically smooth scroll windows to the top view on switch event
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // CONTROL INNER SERVICES SUB-TABS
+        function switchSubService(subId) {
+            // Hide all sub panels
+            const subPanels = document.querySelectorAll('.sub-panel');
+            subPanels.forEach(panel => panel.classList.add('hidden'));
+
+            // Show target sub panel based on button target key mapping
+            if (subId === 'sub-tax') document.getElementById('subpanel-tax').classList.remove('hidden');
+            if (subId === 'sub-gst') document.getElementById('subpanel-gst').classList.remove('hidden');
+            if (subId === 'sub-corp') document.getElementById('subpanel-corp').classList.remove('hidden');
+            if (subId === 'sub-allied') document.getElementById('subpanel-allied').classList.remove('hidden');
+
+            // Reset sub buttons styling states
+            const subBtns = document.querySelectorAll('.sub-service-btn');
+            subBtns.forEach(btn => {
+                btn.classList.remove('bg-brandNavy', 'text-white');
+                btn.classList.add('text-slate-600', 'hover:bg-slate-50');
+            });
+
+            // Set active state highlight on clicked element button control
+            const currentBtn = document.getElementById('btn-' + subId);
+            if(currentBtn) {
+                currentBtn.classList.add('bg-brandNavy', 'text-white');
+                currentBtn.classList.remove('text-slate-600', 'hover:bg-slate-50');
+            }
         }
     </script>
 
-    <!-- Custom Animation Keyframe Rules -->
     <style>
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(8px); }
+            from { opacity: 0; transform: translateY(6px); }
             to { opacity: 1; transform: translateY(0); }
         }
         .animate-fade-in {
-            animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
     </style>
 
